@@ -1,0 +1,78 @@
+@font-face {
+	font-family: mainFont;
+	src: url(assets/font/PatrickHand-Regular.ttf);
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+body {
+	background-color: rgb(30, 30, 30);
+	font-family: mainFont;
+	font-weight: bold;
+	color: #1d1d27;
+	background-image: url('assets/image/bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+
+.mainBox {
+	background-color: #dca5ff;
+	border-radius: 20px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	outline: 5px solid #262755;
+
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards
+}
+
+.mainTitle {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 25px;
+
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards
+}
+
+.mainText {
+	text-align: center;
+	font-size: 20px;
+
+	animation: fadeInAnimation ease 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards
+}
+
+.mainLinks {
+	font-size: 20px;
+	text-align: center;
+
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards
+}
+
+a {
+	color: #7551bb;
+
+	animation: fadeInAnimation ease 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards
+}
