@@ -1,0 +1,194 @@
+/*
+
+this is a minified version of my original code
+>> https://www.toptal.com/ <<
+
+*/
+
+.wrapper-home,
+body,
+html {
+  height: 100%;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.wrapper-home-boxes .box .expand-button,
+.wrapper-home-links a {
+  padding: 15px;
+  cursor: pointer;
+  outline: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrapper-home footer.main-footer a,
+.wrapper-home-links a,
+em {
+  font-weight: 700;
+}
+.wrapper-home .text-intro h1 a,
+.wrapper-home footer.main-footer a,
+.wrapper-home-links a {
+  text-decoration: none;
+  color: var(--dim);
+}
+@font-face {
+  font-family: mainFont;
+  src: url("/assets/font/MabryPro-Regular.ttf");
+}
+:root {
+  --dim: #282a36;
+  --gray: #9e9e9e;
+  --light: #f8f8f2;
+  --red: #ffadad;
+  --orange: #ffd6a5;
+  --yellow: #fdffb6;
+  --green: #caffbf;
+  --cyan: #9bf6ff;
+  --blue: #a0c4ff;
+  --purple: #bdb2ff;
+  --pink: #ffc6ff;
+}
+body,
+html {
+  margin: 0;
+  background-color: var(--light);
+}
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+  font-family: mainFont;
+}
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+em {
+  text-decoration: none;
+  font-style: normal;
+}
+.wrapper-home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.wrapper-home .text-intro {
+  width: 30vw;
+  margin: 50px 0;
+}
+.wrapper-home .text-intro h1 {
+  margin: 0 0 10px;
+  font-size: 40px;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.wrapper-home .text-intro h1 a:hover,
+.wrapper-home .text-intro h1:hover {
+  color: var(--purple);
+}
+.wrapper-home .text-intro p {
+  font-size: 18px;
+  box-shadow: inset 0 0 0 0 var(--purple);
+  transition: 1s;
+}
+.wrapper-home .text-intro p:hover {
+  box-shadow: inset 500px 0 0 0 var(--purple);
+}
+.wrapper-home-boxes .box {
+  width: 30vw;
+  margin-bottom: 30px;
+}
+.wrapper-home-boxes .box#c {
+  margin-bottom: 70px;
+}
+.wrapper-home-boxes .box .expand-button {
+  width: 30vw;
+  border: 1px solid var(--dim);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.wrapper-home-boxes .box .expand-button:hover,
+.wrapper-home-links a:hover {
+  box-shadow: 5px 5px var(--dim);
+  transform: translate(-5px, -5px);
+}
+.wrapper-home-boxes .box #expand-content-1,
+.wrapper-home-boxes .box #expand-content-2,
+.wrapper-home-boxes .box #expand-content-3 {
+  border: 1px solid var(--dim);
+  border-top: none;
+  border-radius: 5px;
+  padding: 30px;
+  display: none;
+  overflow: hidden;
+}
+.wrapper-home-boxes .box #expand-content-1 p,
+.wrapper-home-boxes .box #expand-content-2 p,
+.wrapper-home-boxes .box #expand-content-3 p {
+  margin-bottom: 10px;
+}
+.wrapper-home-boxes .box#a * {
+  background-color: var(--pink);
+}
+.wrapper-home-boxes .box#b * {
+  background-color: var(--purple);
+}
+.wrapper-home-boxes .box#c *,
+.wrapper-home-links a.spotify {
+  background-color: var(--blue);
+}
+.wrapper-home footer.main-footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--red);
+  padding: 20px 20px 10px;
+  border-radius: 5px;
+  transform: translateY(30px);
+}
+.wrapper-home footer.main-footer:hover {
+  transform: translateY(0);
+  box-shadow: 0 0 5px var(--dim);
+}
+.wrapper-home-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-home-links a {
+  width: 28vw;
+  border: 1px solid var(--dim);
+  border-radius: 5px;
+  text-align: center;
+}
+.wrapper-home-links a.discord {
+  background-color: var(--red);
+}
+.wrapper-home-links a.github {
+  background-color: var(--orange);
+}
+.wrapper-home-links a.soundcloud {
+  background-color: var(--yellow);
+}
+.wrapper-home-links a.youtube {
+  background-color: var(--green);
+}
+@media screen and (max-width: 600px) {
+  .wrapper-home .text-intro,
+  .wrapper-home-boxes .box,
+  .wrapper-home-boxes .box .expand-button {
+    width: 70vw;
+  }
+  .wrapper-home footer.main-footer {
+    padding: 8px 20px;
+    transform: translateY(0);
+  }
+  .wrapper-home-links a {
+    width: 63vw;
+  }
+}
