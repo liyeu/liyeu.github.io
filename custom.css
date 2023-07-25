@@ -1,0 +1,93 @@
+/** minified w/ https://www.toptal.com/developers/cssminifier **/
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+#window,
+button {
+  background-color: var(--cLightBlack);
+  border: 1px solid var(--cGray);
+}
+.dropdown-menu,
+button:hover {
+  background-color: var(--cGray);
+}
+.bi,
+.card-title {
+  font-size: 1.3rem;
+}
+.bi,
+button {
+  color: var(--cWhite);
+  transition: 0.3s;
+}
+body {
+  font-family: Poppins, sans-serif;
+  background-color: var(--cLightBlack);
+  height: auto;
+  width: auto;
+  color: var(--cWhite);
+}
+:root {
+  --cBlack: #1b1b1b;
+  --cLightBlack: #252525;
+  --cGray: #676767;
+  --cLightGray: #c9c9c9;
+  --cWhite: #e9e9e9;
+}
+.bg-image {
+  background-image: url("/assets/img.webp");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#padding {
+  padding: 15px;
+}
+button {
+  border-radius: 5px;
+  padding: 5px 13px;
+}
+button:hover {
+  color: var(--cWhite);
+}
+.card-title {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.dropdown-item.disabled {
+  color: var(--cWhite);
+  font-size: 15px;
+}
+.card-subtitle {
+  margin-bottom: 15px;
+}
+#socials {
+  word-spacing: 8px;
+}
+.bi {
+  text-decoration: none;
+}
+.bi:hover {
+  color: var(--cGray);
+}
+@media only screen and (min-width: 600px) {
+  #window {
+    max-width: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #window {
+    max-width: 40vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #window {
+    max-width: 40vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #window {
+    max-width: 30vw;
+  }
+}
